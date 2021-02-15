@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+html,
+body{
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+[area-game]{
+    position: relative;
+    width: 90vw;
+    height: 85vh;
+    margin: 15px auto;
+    background-color: deepskyblue;
+    border: 5px solid dodgerblue;
+    overflow: hidden;
+}
+
+.bird{
+    position: absolute;
+    left: calc(50% - 30px);
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.par-bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar .border{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+
+.bar .body{
+    width: 110px;
+    height: 150px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progress{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Pixel';
+    font-size: 70px;
+    z-index: 1;
+}
+
+/*
+    Medias queries
+*/
+@media screen and (max-width: 1230px){ 
+
+}
